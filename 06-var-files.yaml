@@ -1,6 +1,6 @@
 - name: varaibles from files
   hosts: localhost
-  vars:
+  vars_files:
   - vars.yaml
   tasks: 
   - name: print override info
