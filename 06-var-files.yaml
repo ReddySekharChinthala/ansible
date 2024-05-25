@@ -1,4 +1,4 @@
-- name: varaible
+- name: varaibles
   hosts: localhost
   vars_file:
   - var.yaml
