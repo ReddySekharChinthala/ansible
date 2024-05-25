@@ -1,7 +1,7 @@
 - name: variable preference
   hosts: localhost
   vars:
-  Wishes: "Morning from play level variable"
+    Wishes: "Morning from play level variable"
   vars_files:
   - vars.yaml
   vars_prompt:
@@ -11,7 +11,7 @@
   tasks:
   - name: check variable preference
     vars:
-    Wishes: "Morning from task level varaible"
+      Wishes: "Morning from task level varaible"
     ansible.builtin.debug:
       msg: Hello, Good {{Wishes}}
   
