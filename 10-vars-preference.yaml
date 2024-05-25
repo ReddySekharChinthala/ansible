@@ -10,8 +10,8 @@
     private: false
   tasks:
   - name: check variable preference
-    vars:
-      Wishes: "Morning from task level varaible"
+    # vars:
+    #   Wishes: "Morning from task level varaible"
     ansible.builtin.debug:
       msg: Hello, Good {{Wishes}}
   
