@@ -5,6 +5,6 @@
     ansible.builtin.debug:
        msg: "Hello {{item}}"
     loops:
-    -Linux
-    -Shell
-    -Ansible
+      -Linux
+      -Shell
+      -Ansible
