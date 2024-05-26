@@ -3,8 +3,8 @@
   tasks:
   - name: print names
     ansible.builtin.debug:
-    msg: "Hello {{item}}"
-  loops:
-   -Linux
-   -Shell
-   -Ansible
+       msg: "Hello {{item}}"
+    loops:
+    -Linux
+    -Shell
+    -Ansible
