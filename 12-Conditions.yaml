@@ -6,6 +6,10 @@
     register: USER
     ignore_errors: true
 
+  - name: print user inofrmation
+    ansible.builtin.debug:
+      msg: "user info: {{USER}}"
+      
   - name: say hello
     ansible.builtin.debug:
       msg: "Hello"
