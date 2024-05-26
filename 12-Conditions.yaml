@@ -3,6 +3,7 @@
   tasks:
   - name: check the user id existing or not
     ansible.builtin.command: id expense
+    register: USER
     ignore_errors: true
 
   - name: say hello
