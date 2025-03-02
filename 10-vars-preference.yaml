@@ -1,17 +1,16 @@
-- name: variable preference
+- name: variables
   hosts: localhost
   vars:
-    Wishes: "Morning from play level variable"
+    Course: "DevOps"
   vars_files:
   - vars.yaml
   vars_prompt:
-  - name: Wishes
-    prompt: please enter Wishes
+  - name: Course
+    prompt: please enter the course.
     private: false
   tasks:
-  - name: check variable preference
-    # vars:
-    #   Wishes: "Morning from task level varaible"
+  - name: print info from task level
+    vars:
+      Course: "DevOps"
     ansible.builtin.debug:
-      msg: Hello, Good {{Wishes}}
-  
+      msg: "Hi, iam learning {{Course}}"
