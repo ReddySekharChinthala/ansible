@@ -6,5 +6,5 @@
     Trainer: "SivaKumar"
   tasks:
   - name: print vriable info
-    ansible.builtin.debug:
+    ansible.builtin.debug: # this debug module is like echo command, will print info.
       msg: "Hi, Myself {{Name}} and i'm learning {{Course}} from trainer {{Trainer}}."
