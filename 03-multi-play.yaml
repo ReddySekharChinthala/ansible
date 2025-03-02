@@ -5,11 +5,11 @@
     ansible.builtin.debug:
       msg: "Hi, I'm learning DevOps Course."
 
-- name: play-2
-  hosts: localhost
-  tasks:
-  - name: play-2 and task-1
-    ansbile.builtin.debug:
-      msg: "Hi, I'm learning DevOps Course and i'll get job in April this year."
+# - name: play-2
+#   hosts: localhost
+#   tasks:
+#   - name: play-2 and task-1
+#     ansbile.builtin.debug:
+#       msg: "Hi, I'm learning DevOps Course and i'll get job in April this year."
 
 
