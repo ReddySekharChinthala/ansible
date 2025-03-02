@@ -1,4 +1,4 @@
-- name: variables
+- name: variable
   hosts: localhost
   var:
     Course: "DevOps"
