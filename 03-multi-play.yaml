@@ -1,6 +1,6 @@
 - name: play-1
   hosts: localhost
-  task: 
+  tasks: 
   - name: play-1 and task-1
     ansible.builtin.debug:
       msg: "Hi, I'm learning DevOps Course."
