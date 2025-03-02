@@ -1,10 +1,10 @@
-- name: variable
+- name: variables
   hosts: localhost
-  var:
-    Course: "DevOps"
+  vars:
     Name: "ReddySekhar"
+    Course: "DevOps"
     Trainer: "SivaKumar"
   tasks:
-  - name: print the variable info.
+  - name: print vriable info
     ansible.builtin.debug:
-      msg: "Hi, myself {{Name}} and i'm learning {{Course}} from {{Trainer}}."
+      msg: "Hi, Myself {{Name}} and i'm learning {{Course}} from trainer {{Trainer}}."
