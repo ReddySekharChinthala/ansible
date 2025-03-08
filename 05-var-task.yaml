@@ -1,17 +1,17 @@
 - name: variables
   hosts: localhost
   vars:
-    Name: "ReddySekhar"
     Course: "DevOps"
     Tools: "Ansible"
+    Duration: "1 Week"
   tasks:
-  - name: print the override info.
+  - name: print override information
     vars:
       Course: "Terraform"
-    ansible.builtin.debug:
-      msg: "Hi, Myself {{Name}} and i joined in {{Course}} course. And currently learning {{Tools}} tool."
+    ansible.bultin.debug:
+      msg: "Hi, Iam learning {{Course}} course. Now im practicing {{Tools}} tool and will finish it in {{Duration}}.
 
-  - name: print the info.
+  - name: Print variable information
     ansible.builtin.debug:
-      msg: "Hi, Myself {{Name}} and i joined in {{Course}} course. And currently learning {{Tools}} tool."
-  
+      msg: "Hi, Iam learning {{Course}} course. Now im practicing {{Tools}} tool and will finish it in {{Duration}}.
+
