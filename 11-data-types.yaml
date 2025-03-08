@@ -6,11 +6,11 @@
     - Linux
     - Shell
     - Ansible
-  Experience:
-    DevOps: 3
-    AWS: 2
-    Docker: 1
-  RealProject: true
+    Experience:
+      DevOps: 3
+      AWS: 2
+      Docker: 1
+    RealProject: true
   tasks:
   - name: print variable info
     ansible.builtin.debug:
