@@ -1,5 +1,5 @@
 Course: "DevOps"
-#Duration: "3 months"
-Name: "ReddySekhar"
+Duration: "3 months"
+#Name: "ReddySekhar"
 Tools: "Ansible"
 #Wishes: "Morning from variable file"
