@@ -8,7 +8,7 @@
   - name: print override information
     vars:
       Course: "Terraform"
-    ansible.bultin.debug:
+    ansible.builtin.debug:
       msg: "Hi, Iam learning {{Course}} course. Now im practicing {{Tools}} tool and will finish it in {{Duration}}."
 
   - name: Print variable information
