@@ -43,5 +43,5 @@
 
   - name: print minimum age ppl
     ansible.builtin.debug:
-      msg: "{{age | mini}}"
+      msg: "{{age | min}}"
 
