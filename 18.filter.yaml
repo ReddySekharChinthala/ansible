@@ -76,7 +76,7 @@
 
   - name: after convert
     ansible.builtin.debug:
-      msg: "After convert: {{ my_list | iteam2dict }}"
+      msg: "After convert: {{ my_list | items2dict }}"
 
 
 
