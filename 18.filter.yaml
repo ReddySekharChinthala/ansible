@@ -30,5 +30,5 @@
   tasks:
   - name: print unique numbers
     ansible.builtin.debug:
-      msg: "{{numbers | unique}}"
+      msg: "{{number | unique}}"
 
