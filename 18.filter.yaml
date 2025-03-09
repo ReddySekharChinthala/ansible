@@ -45,3 +45,19 @@
     ansible.builtin.debug:
       msg: "{{age | min}}"
 
+- name: convert dictionary into items/list
+  hosts: localhost
+  vars:
+    my_dict:
+      Course: "DevOps with AWS"
+      Trainer: "Siva"
+      Duration: "2 months" 
+  tasks:
+  - name: before convert
+    ansible.builtin.debug:
+      msg: "Before convert: {{ my_dict }}"
+
+  - name: after convert
+    ansible.builtin.debug:
+      msg: "Before convert: {{ my_dict | dict2items }}"
+
