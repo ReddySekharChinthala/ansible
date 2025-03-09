@@ -66,9 +66,9 @@
   hosts: localhost
   vars:
     my_list:
-      - "{'key': 'Course', 'value': 'DevOps with AWS'}"
-      - "{'key': 'Trainer', 'value': 'Siva'}"
-      - "{'key': 'Duration', 'value': '2 months'}"
+      - {'key': 'Course', 'value': 'DevOps with AWS'}
+      - {'key': 'Trainer', 'value': 'Siva'}
+      - {'key': 'Duration', 'value': '2 months'}
   tasks:
   - name: before convert
     ansible.builtin.debug:
