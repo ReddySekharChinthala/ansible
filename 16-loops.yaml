@@ -4,7 +4,8 @@
   tasks:
   - name: install packages
     ansible.builtin.debug:
-      msg: "installing packages {{item}}"
+      name: "{{item}}"
+      state: latest
     loop:
       - mysql
       - nginx
