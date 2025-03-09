@@ -10,7 +10,7 @@
       DevOps: 3 # Number
       AWS: 2
       Ansible: 1
-  RealProject: true # boolean
+    RealProject: true # boolean
   tasks:
   - name: print the datatypes info
     ansible.builtin.debug:
