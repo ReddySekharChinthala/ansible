@@ -13,3 +13,15 @@
   - name: print the upper info in uppercase
     ansible.builtin.debug:
       msg: "{{greetings | upper}}"
+
+- name: lower case
+  hosts: localhost
+  vars:
+    Tools:
+      - ansible
+      - terraform
+  tasks:
+  - name: convert into lower case
+    ansible.builtin.debug:
+      msg: {{Tools | lower}}
+
