@@ -17,11 +17,9 @@
 - name: lower case
   hosts: localhost
   vars:
-    Tools:
-      - ansible
-      - terraform
+    Course: "DevOPs with AWS"
   tasks:
   - name: convert into lower case
     ansible.builtin.debug:
-      msg: {{Tools | lower}}
+      msg: "{{Course | lower}}"
 
