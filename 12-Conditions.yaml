@@ -8,7 +8,7 @@
 
   - name: Print the user info
     ansible.builtin.debug:
-      msg: "user output is {{register}}"
+      msg: "user output is {{USER}}"
 
   - name: say Hello
     ansible.builtin.debug:
