@@ -14,4 +14,4 @@
   tasks:
   - name: print the datatypes info
     ansible.builtin.debug:
-      msg: "Hi, Iam learning {{Course}} course, i have covered {{Tools}} tools. And i have {{Experience}}. Its a {{RealProject}} true."
+      msg: "Hi, Iam learning {{Course}} course, i have covered {{Tools}} tools. And i have {{Experience}} experience. Its a {{RealProject}} true."
