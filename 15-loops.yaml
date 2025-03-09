@@ -4,7 +4,7 @@
   - name: print the tools names
     ansible.builtin.debug:
       msg: "DevOps Tools are {{item}}"
-    loops:
-    - Ansible
-    - Terraform
-    - Docker
+    loop:
+      - Ansible
+      - Terraform
+    
