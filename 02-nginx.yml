@@ -1,0 +1,13 @@
+- name: install and run nginx
+  hosts: web
+  become: yes
+  tasks: 
+  - name: install nginx
+    ansible.builtin.dnf:
+    name: nginx
+    status: latest
+  - name: start inginx
+    ansible.builtin.service:
+    name: nginx
+    state: started
+    enabled: yes #The service will start automatically every time the server boots.
