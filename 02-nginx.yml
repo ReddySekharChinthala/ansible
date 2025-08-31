@@ -3,7 +3,7 @@
   become: yes
   tasks: 
   - name: install nginx
-    ansible.builtin.dnf:
+    ansible.builtin.packages:
       name: nginx
       status: latest
   - name: start inginx
