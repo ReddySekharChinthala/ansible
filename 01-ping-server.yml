@@ -1,0 +1,5 @@
+- name: ping the remote server
+  hosts: mysql
+  tasks:
+  - name: pinging the mysql server
+    ansible.builtin.ping:
