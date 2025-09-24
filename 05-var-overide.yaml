@@ -12,5 +12,5 @@
     vars:
       course: "Terraform"
       duration: "20 days"
-    ansible.become.debug: 
+    ansible.builtin.debug: 
       msg: "Hi, I'am learning {{course}} and duration is {{duration}}."
