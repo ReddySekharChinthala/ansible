@@ -8,7 +8,7 @@
     ansible.builtin.debug:
       msg: "Hi, I'am learning {{course}} and duration is {{duration}}."
 
-  - name: print overide the info
+  - name: print override the information
     vars:
       course: "Terraform"
       duration: "20 days"
