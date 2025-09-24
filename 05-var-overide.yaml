@@ -8,9 +8,9 @@
     ansible.builtin.debug:
       msg: "Hi, I'am learning {{course}} and duration is {{duration}}."
 
-  - name: print and overide the infor
+  - name: print overide the infor
     vars:
       course: "Terraform"
       duration: "20 days"
-    tasks:
-    - name: "Hi, I'am learning {{course}} and duration is {{duration}}."
+    ansible.become.debug: 
+      msg: "Hi, I'am learning {{course}} and duration is {{duration}}."
