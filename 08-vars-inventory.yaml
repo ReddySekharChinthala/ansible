@@ -1,0 +1,6 @@
+- name: variable from inventory vars_files
+  hosts: localhost
+  tasks:
+  - name: print variables from inventory vars_files
+    ansible.builtin.debug:
+      msg: "Hi, Im learning {{course}} and {{tool}} tool is practicing."
