@@ -1,0 +1,17 @@
+- name: conditions
+  hosts: localhost
+  vars:
+    Course: "DevOps with AMS"
+    Tools:
+    - ansible
+    - linux
+    - Shell-script
+    Experience:
+      Ansible: 2
+      Terraform: 2
+      DOcker: 1
+    Real_Project: true
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: "Course: {{Course}}, Tools: {{Tools}}, Experience is {{Experience}}, and real project:: {{Real_Project}}"
