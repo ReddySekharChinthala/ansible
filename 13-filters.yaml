@@ -33,14 +33,14 @@
     ansible.builtin.debug:
       msg: "{{numbers | unique}}"
 
-# - name: mini and maximum ages
-#   hosts: localhost
-#   vars:
-#     ages: [32, 33, 50, 79]
-#   tasks:
-#   - name: print mini ages
-#     anisble.builtin.debug:
-#       msg: "mini age: {{ages | mini}}, maxi age: {{ages | maxi}}"
+- name: mini and maximum ages
+  hosts: localhost
+  vars:
+    ages: [32, 33, 50, 79]
+  tasks:
+  - name: print mini ages
+    anisble.builtin.debug:
+      msg: "mini age: {{ages | mini}}, maxi age: {{ages | maxi}}"
 
 # - name: convert dictionary into items/list
 #   hosts: localhost
