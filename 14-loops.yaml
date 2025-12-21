@@ -1,0 +1,11 @@
+- name: loops 
+  hosts: localhost
+  tasks:
+  - name: print the items
+    ansible.builtin.debug:
+      msg: Tool name is {{item}}
+
+    tools:
+    - Ansible
+    - Terrform
+    - Docker
