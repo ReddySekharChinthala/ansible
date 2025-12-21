@@ -1,4 +1,4 @@
-- name: conditions
+- name: Data types
   hosts: localhost
   vars:
     Course: "DevOps with AMS"
