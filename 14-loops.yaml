@@ -4,8 +4,8 @@
   - name: print the items
     ansible.builtin.debug:
       msg: "Tool name is {{item}}"
-
-    loops:
-    - Linux
-    - Shell
-    - Ansible
+      
+      loops:
+      - Linux
+      - Shell
+      - Ansible
