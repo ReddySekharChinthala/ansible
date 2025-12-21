@@ -39,7 +39,7 @@
     ages: [32, 33, 50, 79]
   tasks:
   - name: print mini ages
-    anisble.builtin.debug:
+    ansible.builtin.debug:
       msg: "mini age: {{ages | mini}}, maxi age: {{ages | maxi}}"
 
 # - name: convert dictionary into items/list
