@@ -5,7 +5,7 @@
     ansible.builtin.debug:
       msg: Tool name is {{item}}
 
-    tools:
-    - Ansible
-    - Terrform
-    - Docker
+      tools:
+      - Ansible
+      - Terrform
+      - Docker
