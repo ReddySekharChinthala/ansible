@@ -24,14 +24,14 @@
     ansible.builtin.debug:
       msg: "{{greetings | lower}}"
 
-# - name: remove duplicates
-#   hosts: 
-#   vars:
-#     numbers: [1,1,2,2,3,3,4,4,5]
-#   tasks:
-#   - name: remove duplicated and print correct numbers
-#     ansible.builtin.debug:
-#       msg: "{{numbers | unique}}"
+- name: remove duplicates
+  hosts: 
+  vars:
+    numbers: [1,1,2,2,3,3,4,4,5]
+  tasks:
+  - name: remove duplicated and print correct numbers
+    ansible.builtin.debug:
+      msg: "{{numbers | unique}}"
 
 # - name: mini and maximum ages
 #   hosts: localhost
