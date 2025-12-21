@@ -40,7 +40,7 @@
   tasks:
   - name: print mini ages
     ansible.builtin.debug:
-      msg: "mini age: {{ages|mini}}, maxi age: {{ages|maxi}}"
+      msg: "mini age: {{ages|min}}, maxi age: {{ages|max}}"
 
 # - name: convert dictionary into items/list
 #   hosts: localhost
