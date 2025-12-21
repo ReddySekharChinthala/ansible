@@ -14,15 +14,15 @@
     ansible.builtin.debug:
      msg: "Course is {{Course | upper}}"
 
-# - name: lower case
-#   hosts: localhost
-#   vars:
-#     greetings: "GOOD MORNING"
+- name: lower case
+  hosts: localhost
+  vars:
+    greetings: "GOOD MORNING"
 
-#   tasks: 
-#   - name: print lowercase letters
-#     ansible.builtin.debug:
-#       msg: "{{greetings | lower}}"
+  tasks: 
+  - name: print lowercase letters
+    ansible.builtin.debug:
+      msg: "{{greetings | lower}}"
 
 # - name: remove duplicates
 #   hosts: 
