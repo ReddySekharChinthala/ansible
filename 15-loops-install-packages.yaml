@@ -3,9 +3,9 @@
   become: yes
   tasks: 
   - name: install packages
-    ansible.builtin.debug:
+    ansible.builtin.dnf:
       name: "{{item}}"
-      state: latest
+      state: "latest"
     loop:
     - nginx
     - mysql
