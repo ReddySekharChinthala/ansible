@@ -1,0 +1,77 @@
+- name: default filter
+  hosts: localhost
+  tasks:
+  - name: print default value
+    ansible.builtin.debug:
+      msg: "Hello {{course | default ('Ansible')}}"
+
+- name: upper case
+  hosts: localhost
+  vars:
+    Course: "devops"
+  tasks:
+  - name: print uppercase letters
+    ansible.builtin.debug:
+     msg: "Course is {{Course | upper}}"
+
+- name: lower case
+  hosts: localhost
+  vars:
+    greetings: "GOOD MORNING"
+
+  tasks: 
+  - name: print lowercase letters
+    ansible.builtin.debug:
+      msg: "{{greetings | lower}}"
+
+- name: remove duplicates
+  hosts: 
+  vars:
+    numbers: [1,1,2,2,3,3,4,4,5]
+  tasks:
+  - name: remove duplicated and print correct numbers
+    ansible.builtin.debug:
+      msg: "{{numbers | unique}}"
+
+- name: mini and maximum ages
+  hosts: localhost
+  vars:
+    ages: [32, 33, 50, 79]
+  tasks:
+  - name: print mini ages
+    anisble.builtin.debug:
+      msg: "mini age: {{ages | mini}}, maxi age: {{ages | maxi}}"
+
+- name: convert dictionary into items/list
+  hosts: localhost
+  my_dict:
+    Name: "ReddySekhar"
+    Course: "DevOps"
+    Designation: "DevOps Engineer"
+    Expereince: "3 years"
+  tasks:
+  - name: print before convert
+    ansible.builtin.debug:
+      msg: "Before convert: {{my_dict}}"
+
+  - name: print after convert
+    ansible.builtin.debug:
+      msg: "After convert: {{my_dict | dict2 items}}"
+
+
+- name: convert items into dictionary
+  hosts: localhost
+  my_items:
+    - {'key': Course, 'value': 'DevOps'}
+    - {'key': Designation, 'value': 'DevOpsEngineer'}
+    - {'key': Experience, 'value': '3 years'}
+  tasks:
+  - name: before convert
+    ansible.builtin.debug:
+      msg: "Before convert: {{my_items}}"
+
+  - name: after convert
+    ansible.builtin.debug:
+      msg: "After convert: {{my_items | items2 dict}}"
+
+    
